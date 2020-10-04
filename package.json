@@ -1,0 +1,24 @@
+{
+  "name": "eleventy-auto-navigation",
+  "version": "1.0.0",
+  "description": "Directory structure-based navigation for eleventy-plugin-navigation.",
+  "main": ".eleventy.js",
+  "scripts": {
+    "dev": "npx @11ty/eleventy --serve",
+    "build": "npx @11ty/eleventy"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/adamduncan/eleventy-auto-navigation.git"
+  },
+  "author": "Adam Duncan <mail@adamduncandesigns.com> (https://adamduncandesigns.com)",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/adamduncan/eleventy-auto-navigation/issues"
+  },
+  "homepage": "https://github.com/adamduncan/eleventy-auto-navigation#readme",
+  "devDependencies": {
+    "@11ty/eleventy": "^0.11.0",
+    "@11ty/eleventy-navigation": "^0.1.6"
+  }
+}
