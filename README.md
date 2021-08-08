@@ -13,7 +13,7 @@ _How to build and run the code/app_ -->
 git clone git@github.com:pietrop/11ty-auto-navigation-book-template.git
 ```
 ```
-cd eleventy-auto-navigation
+cd 11ty-auto-navigation-book-template
 ```
 
 ```
