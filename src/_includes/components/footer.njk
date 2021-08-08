@@ -1,0 +1,37 @@
+<footer class="footer">
+{{site|dump|safe}}
+    <nav>
+        <ul class="contacts-list">
+            <li>
+                {% if site.owner.email %}<a
+                    href="mailto:{{ site.owner.email }}?Subject=Hello&body=Hi {{ site.owner.name }}, %0D%0A Was reading your website, and I've got a question..."
+                    class="author-social" target="_blank" rel="noopener noreferrer">
+                    <i class="far fa-envelope"></i>
+                    E-mail</a>{% endif %} <span></span>
+            </li>
+            <li>
+                {% if site.owner.twitter %}<a 
+                    href="https://twitter.com/{{ site.owner.twitter }}" target="_blank" rel="noopener noreferrer"> 
+                    <i class="fab fa-twitter"></i> Twitter</a>{% endif %}
+            </li>
+            <li>
+                {% if site.owner.github %}<a 
+                    href="https://github.com/{{ site.owner.github }}" target="_blank" rel="noopener noreferrer">
+                    <i class="fab fa-github"></i> GitHub</a>{% endif %}
+            </li>
+            <li>
+                {% if site.owner.linkedin %}<a 
+                    href="https://uk.linkedin.com/in/{{ site.owner.linkedin }}" target="_blank"
+                    rel="noopener noreferrer"><i class="fab fa-linkedin-in"></i> Linkedin</a>{%
+                endif %}
+            </li>
+
+            <li>
+                {% if site.owner.instagram %}<a 
+                    href="https://www.instagram.com/{{ site.owner.instagram }}" target="_blank"
+                    rel="noopener noreferrer"><i class="fab fa-instagram"></i> Instagram</a>{%
+                endif %}
+            </li>
+        </ul>
+    </nav>
+</footer>

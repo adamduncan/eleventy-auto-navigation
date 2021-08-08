@@ -1,0 +1,14 @@
+<form class="search-form" onsubmit="duckSearch()" action="javascript:void(0)">
+    <input id="searchField" type="text" value="" placeholder="Search..."> <img class="duck-icon" src="/img/rubber-duck.png" alt="decoration rubber duck" width="20" height="20">
+</form>
+
+
+<script type="text/javascript">
+    function duckSearch() {
+        var searchField = document.getElementById("searchField");
+        if (searchField && searchField.value) {
+            var query = escape("site:pietropassarelli.com " + searchField.value);
+            window.open ( "https://duckduckgo.com/?q=" + query, "_blank");
+        }
+    }
+</script>

@@ -1,8 +1,30 @@
-{{ content | safe }}
+<!DOCTYPE html>
+<html lang="en">
 
-<hr/>
+  {% include 'components/head.njk' %}
 
-<footer>
-  Site tree:
-  {% include 'components/nav.njk' %}
-</footer>
+  <body>
+    <div class="container default-pages">
+      <header class="header">
+        {{ site.title }}
+        {{page.title}}</header>
+      <div class="wrapper">
+
+        {% include 'components/nav.njk' %}
+
+        <main class="main">
+
+          {{ content | safe }}
+
+          {# {{site|dump|safe}} #}
+          {# {{test|dump|safe}} #}
+        </main>
+      </div>
+      {# {% include 'components/footer.njk' %} #}
+    </div>
+    <script type="text/javascript">
+      ddtreemenu.createTree("treemenu3", true)
+    </script>
+    {% include 'components/syntax-highlight.njk' %}
+  </body>
+</html>

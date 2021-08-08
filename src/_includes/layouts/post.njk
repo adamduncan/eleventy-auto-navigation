@@ -1,0 +1,34 @@
+---
+layout: layouts/base.njk
+---
+
+{%-if image-%}
+    <img src="{{ image }}" class="img-hero-wrapper" alt="{{ description }}"/>
+    {%- else-%}
+    <br/>
+     
+{%- endif -%}
+
+<div class="post-wrapper">
+    <div class="post">
+       {%-if eleventyNavigation.emoji and not image -%}
+  <br/>
+          <br/>
+            <br/>
+       <br/>
+          <br/>
+       {%-endif-%}
+        {%-if eleventyNavigation.emoji -%}
+            <div class="emoji-wrapper">
+                {{eleventyNavigation.emoji}}
+            </div>
+        {%- endif -%}
+
+        {%-if title-%}
+            <h1 class="post-title">{{title}}</h1>
+        {%- endif -%}
+
+        {{ content  | safe}}
+
+    </div>
+</div>

@@ -1,0 +1,272 @@
+body {
+margin: 0px;
+}
+.wrapper {
+    display: flex;
+}
+
+.navigation-primary {
+    padding: 1em;
+    width: 30%;
+    background-color: #f7f6f3;
+    /* color: #181610;  */
+    /* color: rgba(25, 23, 17, 0.6); */
+ 
+}
+
+.navigation-link {
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.navigation-link {
+    text-transform: capitalize;
+    font-weight: 500;
+    color: rgba(25, 23, 17, 0.7);
+     /* color: #181610; */
+    text-decoration: none;
+}
+
+.navigation-link .is-active > span{
+    /* color: rgba(25, 23, 17, 1); */
+    font-weight: 800;
+}
+
+span.emoji {
+    color: rgba(0, 0, 0, 1);
+}
+
+
+.main {
+    width: 70%;
+    overflow-y: scroll;
+    /* height: 80vh; */
+    height: 85vh;
+    padding-bottom: 10em;
+}
+
+footer.footer {
+    height: 4vh;
+}
+
+.post-wrapper {
+    display: flex;
+    justify-content: center;
+}
+
+.post {
+    width: 70%;
+}
+
+
+
+
+
+.img-hero-wrapper {
+    display: block;
+    object-fit: cover;
+    border-radius: 0px;
+    width: 100%;
+    height: 30vh;
+    opacity: 1;
+    object-position: center 50%;
+}
+
+
+
+[aria-current="page"] {
+    font-weight: bold;
+    /* background-color: yellow; */
+  }
+
+
+/*  */
+
+/* emoji wrapper */
+
+  .emoji-wrapper  {
+    user-select: none;
+    transition: background 20ms ease-in 0s;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 78px;
+    width: 78px;
+    border-radius: 3px;
+    flex-shrink: 0;
+    position: relative;
+    z-index: 1;
+    margin-left: 3px;
+    margin-bottom: 0px;
+    align-self: flex-start;
+    margin-top: -58px;
+    font-size: 80px;
+}
+
+/*  */
+
+/* Images */
+
+img {
+    display: block;
+    max-width: 100%;
+    margin: 0 0 1rem;
+    border-radius: 5px;
+}
+
+/* Nav */
+
+ul.menu-list {
+    padding-left: 0px;
+    font-size: 1.2rem;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+ul.menu-list li {
+    display: inline;
+    margin-right: 1em;
+}
+
+ul.menu-list a .active {
+    font-weight: bold;
+}
+
+body {
+    height: 100%;
+}
+
+/* Footer */
+
+/* .footer {
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    text-align: center;
+} */
+
+ul.contacts-list li {
+    display: inline;
+}
+
+/* customizing defaults */
+
+blockquote p {
+    font-style: italic;
+    padding-left: 1rem;
+    margin: .8rem 0;
+    color: #7a7a7a;
+    border-left: .25rem solid #e5e5e5;
+}
+blockquote {
+    margin-left: 0px;
+}
+
+
+
+/*Layout*/
+
+/* .footer{
+    flex: 1;
+}
+.nav{
+    flex: 1;
+} */
+
+/* Media Queries */
+
+/* Extra small devices (phones, 600px and down) */
+
+@media only screen and (max-width: 600px) {
+    /* .wrapper {
+        width: 90%;
+    } */
+}
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+
+@media only screen and (min-width: 600px) {
+    /* .wrapper {
+        width: 70%;
+    } */
+}
+
+/* Medium devices (landscape tablets, 768px and up) */
+
+@media only screen and (min-width: 768px) {
+    /* .wrapper {
+        width: 60%;
+    } */
+}
+
+/* Large devices (laptops/desktops, 992px and up) */
+
+@media only screen and (min-width: 992px) {
+    /* .wrapper {
+        width: 700px;
+    } */
+}
+
+/* fonts */
+
+.default-pages {
+    font-family: 'Helvetica', 'Arial', sans-serif;
+}
+
+.about, .footer, .header, .nav, .intro {
+    font-family: 'Courier New', 'Helvetica', 'Arial', sans-serif;
+}
+
+.about p, p.intro {
+    font-size: 1.2rem;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    /* font-family: 'Georgia' */
+}
+
+/* Capitalizes first letter for headings h1-h6 */
+
+h1:first-letter, h2:first-letter, h3:first-letter, h4:first-letter, h5:first-letter, h6:first-letter {
+    text-transform: capitalize;
+}
+
+code[class*="language-"], pre[class*="language-"] {
+    font-family: courier!important;
+}
+
+details[open] {
+    border: 0.1em dashed;
+    border-radius: 0.3em;
+}
+
+details:not([open])>summary {
+    text-decoration: underline;
+}
+
+details {
+    overflow: scroll;
+}
+
+
+/* search Form */
+
+.search-form {
+    /* margin-bottom: 1em; */
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+}
+
+.search-form>input#searchField {
+    width: 86%;
+}
+
+.duck-icon{
+    margin-top: 1em;
+    margin-left: 1em;
+}

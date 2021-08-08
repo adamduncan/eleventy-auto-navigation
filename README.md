@@ -1,5 +1,7 @@
 # eleventy-auto-navigation
 
+<!-- https://github.com/adamduncan/eleventy-auto-navigation -->
+
 Directory structure-based navigation concept for eleventy-plugin-navigation. Based on a moonshoot :rocket: in [a discussion](https://github.com/11ty/eleventy/issues/1171#issuecomment-637038522) about automatic hierarchical navigation.
 
 [Eleventy Navigation](https://www.11ty.dev/docs/plugins/navigation/) plugin defines its tree structure based on `key` and `parent` data in a site's pages.
@@ -21,3 +23,36 @@ npm install
 ```
 npm run dev
 ```
+
+
+----
+
+
+Based upon [eleventy-auto-navigation](https://github.com/adamduncan/eleventy-auto-navigation)
+uses modified version of [Simple Tree Menu](http://www.dynamicdrive.com/dynamicindex1/navigate1.htm) for the collapsable sidebar navigation.
+
+
+
+---
+
+TODOS: 
+- [x] sidebar Navbar layout
+- [x] Tree navigation in sidebar
+- [ ] add to github ass template site 
+- [ ] publish to github pages
+- [x] add other 11ty things, like syntax highlight etc.. and example pages 
+- [x] Test local images, to see if needs extra configuration 
+- [ ] figure out why `_data` `site.js` is not working
+- [x] figure out why current page has stop showing up 
+
+_stretch goal_
+- [ ] add footer 
+- [ ] breakdown templates into parts, eg head.njk etc..
+- [ ] make outward links open new tab 
+- [ ] show markdown alt image text as description of image?
+- [ ] images embed for social media share options
+- [ ] optional Google analytics setup 
+- [ ] figure out what to do about mobile
+- [ ] see if can move content page inside `src/content`
+- [ ] site search (~nice to have)
+- [ ] 404 page 
