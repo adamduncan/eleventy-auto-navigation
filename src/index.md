@@ -9,3 +9,7 @@ emoji: 🏡
 
 Example site, see [github repository for more background info](https://github.com/pietrop/11ty-auto-navigation-book-template), [how to use section](/how-to-use), and [kitchen sink example page]({{ site.baseUrl }}/kitchen-sink)
 
+
+
+## What can I use this for?
+Anything you want, a book, notes, documentation etc..

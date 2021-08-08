@@ -29,7 +29,7 @@ click on `Use this template`. Will prompt you to create a new repo based on this
 ## Usage
 
 ```
-npm run dev
+npm start
 ```
 
 
