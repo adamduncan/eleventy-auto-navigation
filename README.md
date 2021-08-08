@@ -10,7 +10,7 @@ _How to build and run the code/app_ -->
 
 ### To contribute 
 ```
-git clone git@github.com:pietrop/eleventy-auto-navigation.git
+git clone git@github.com:pietrop/11ty-auto-navigation-book-template.git
 ```
 ```
 cd eleventy-auto-navigation
