@@ -1,0 +1,43 @@
+{
+    "short_name": "Pietro Passarelli",
+    "name": "Pietro Passarelli",
+    "icons": [
+      {
+        "src": "/images/icons-192.png",
+        "type": "image/png",
+        "sizes": "192x192"
+      },
+      {
+        "src": "/images/icons-512.png",
+        "type": "image/png",
+        "sizes": "512x512"
+      }
+    ],
+    "start_url": "/?source=pwa",
+    "background_color": "#3367D6",
+    "display": "standalone",
+    "scope": "/",
+    "theme_color": "#3367D6",
+    "shortcuts": [
+      {
+        "name": "Pietro Passarelli",
+        "short_name": "Pietro",
+        "description": "Pietro's website",
+        "url": "/",
+        "icons": [{ "src": "/images/today.png", "sizes": "192x192" }]
+      }
+    ],
+    "description": "Pietro's website",
+    "screenshots": [
+      {
+        "src": "/images/screenshot1.png",
+        "type": "image/png",
+        "sizes": "540x720"
+      },
+      {
+        "src": "/images/screenshot2.jpg",
+        "type": "image/jpg",
+        "sizes": "540x720"
+      }
+    ]
+  }
