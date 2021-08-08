@@ -9,9 +9,7 @@
     <meta name="description" content="{{site.description}}">
 
     <!-- CSS -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css"
-    integrity="sha512-nhsc1ymyruxifcj/kfrwoc561yphpc5jtzgvbuzx5vozkpwvq+4nxhpdfgmx8xqexrcpagltj9sibwinxa8x5w=="
-    crossorigin="anonymous" referrerpolicy="no-referrer" defer/>
+    <link rel="stylesheet" href="{{ site.baseUrl }}/public/css/normalize.min.css" defer/>
     <link rel="stylesheet" href="{{ site.baseUrl }}/public/css/style.css" defer>
     <link rel="stylesheet" href="{{ site.baseUrl }}/public/css/mobile.css" defer>
     <link rel="stylesheet" href="{{site.baseUrl }}/public/css/dark-mode.css" defer>
@@ -39,7 +37,7 @@
 
   <!-- ////////// Favicon ////////// -->
   <!-- For old IEs -->
-  <link rel="shortcut icon" href="{{ site.baseurl }}/public/favicon.ico/favicon.ico" async>
+  {# <link rel="shortcut icon" href="{{ site.baseurl }}/public/favicon.ico/favicon.ico" async>
   <!-- For new browsers - multisize ico  -->
   <link rel="icon" type="image/x-icon" sizes="16x16 32x32" href="{{ site.baseurl }}/public/favicon.ico/favicon.ico"
     async>
@@ -64,7 +62,7 @@
   <!-- For non-Retina iPhone, iPod Touch, and Android 2.1+ devices: -->
   <link rel="apple-touch-icon-precomposed" href="{{ site.baseurl }}/public/favicon.ico/favicon-57.png" async>
   <!-- For Old Chrome -->
-  <link rel="icon" href="{{ site.baseurl }}/public/favicon.ico/favicon-32.png" sizes="32x32" async>
+  <link rel="icon" href="{{ site.baseurl }}/public/favicon.ico/favicon-32.png" sizes="32x32" async> #}
   <!-- For IE10 Metro -->
   <meta name="msapplication-TileColor" content="#FFFFFF">
   <meta name="msapplication-TileImage" content="favicon-144.png" async>
@@ -93,7 +91,7 @@
 
   <!--  -->
 
-  {% if site.isProd %}
+  {% if site.isProd and site.tracking.gtag %}
   <script async src="https://www.googletagmanager.com/gtag/js?id={{ site.tracking.gtag }}">
   </script>
 

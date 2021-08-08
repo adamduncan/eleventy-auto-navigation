@@ -11,7 +11,7 @@ module.exports = {
     environment,
     isProd,
     tracking: {
-      gtag: ''
+      // gtag: ''
     },
     title: name.replace(/-/g, ' '),// optional 
     version, // optional 
