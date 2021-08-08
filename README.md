@@ -135,7 +135,7 @@ _stretch goal_
 - [x] images embed for social media share options
 - [x] Other head social media tags
 - [ ] optional Google analytics setup 
-- [~] figure out what to do about mobile
+- [x] figure out what to do about mobile `~`
 - [ ] ~see if can move content page inside `src/content`~
 - [x] site search (~nice to have)
 - [ ] 404 page 
