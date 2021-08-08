@@ -5,5 +5,7 @@ order: 0
 emoji: 🏡
 ---
 
-Example site, see [github repository for more background info](https://github.com/pietrop/11ty-auto-navigation-book-template), and/or [kitchen sink example page]({{ site.baseUrl }}/kitchen-sink)
+[11ty](https://www.11ty.dev/) markdown directory structure-based navigation site with [`eleventy-plugin-navigation`](https://www.11ty.dev/docs/plugins/navigation/).
+
+Example site, see [github repository for more background info](https://github.com/pietrop/11ty-auto-navigation-book-template), [how to use section](/how-to-use), and [kitchen sink example page]({{ site.baseUrl }}/kitchen-sink)
 

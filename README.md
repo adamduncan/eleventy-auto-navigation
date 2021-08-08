@@ -117,26 +117,27 @@ This publishes the site to github pages for this github repository.
 ## TODOS: 
 - [x] sidebar Navbar layout
 - [x] Tree navigation in sidebar
-- [ ] add to github ass template site 
-- [ ] publish to github pages
+- [x] add to github ass template site 
+- [x] publish to github pages
 - [x] add other 11ty things, like syntax highlight etc.. and example pages 
 - [x] Test local images, to see if needs extra configuration 
-- [ ] figure out why `_data` `site.js` is not working
+- [x] figure out why `_data` `site.js` is not working
 - [x] figure out why current page has stop showing up
 - [x] edit on github link 
-- [ ] support for font awesome icons
+- [x] support for font awesome icons
 - [x] optional footer
 
 _stretch goal_
-- [ ] add footer 
+- [x] add footer 
 - [ ] breakdown templates into parts, eg head.njk etc..
 - [ ] make outward links open new tab 
 - [ ] show markdown alt image text as description of image?
-- [ ] images embed for social media share options
+- [x] images embed for social media share options
+- [x] Other head social media tags
 - [ ] optional Google analytics setup 
 - [ ] figure out what to do about mobile
-- [ ] see if can move content page inside `src/content`
-- [ ] site search (~nice to have)
+- [ ] ~see if can move content page inside `src/content`~
+- [x] site search (~nice to have)
 - [ ] 404 page 
 
 

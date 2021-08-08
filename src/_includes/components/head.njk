@@ -1,12 +1,19 @@
 <head>
     <title>
         {{site.title}} - {{title}}</title>
+    <meta charset="utf-8">
+    <meta http-equiv="content-type" content="text/html; charset=utf-8">
+
+    <!-- Enable responsiveness on mobile devices-->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="{{site.description}}">
 
     <!-- CSS -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css"
     integrity="sha512-nhsc1ymyruxifcj/kfrwoc561yphpc5jtzgvbuzx5vozkpwvq+4nxhpdfgmx8xqexrcpagltj9sibwinxa8x5w=="
     crossorigin="anonymous" referrerpolicy="no-referrer" defer/>
     <link rel="stylesheet" href="{{ site.baseUrl }}/public/css/style.css" defer>
+    <link rel="stylesheet" href="{{ site.baseUrl }}/public/css/mobile.css" defer>
     <link rel="stylesheet" href="{{site.baseUrl }}/public/css/dark-mode.css" defer>
     <link rel="stylesheet" href="{{site.baseUrl}}/public/css/fontawesome-free-5.15.4-web/css/all.min.css"/>
 
@@ -21,6 +28,83 @@
     {% include 'simpletreemenu/simpletree.njk' %}
 
     <!-- Syntax highlight  -->
-     <link id="prism-css" href="{{site.baseUrl}}/public/css/prism.css" rel="stylesheet" defer>
+    <link id="prism-css" href="{{site.baseUrl}}/public/css/prism.css" rel="stylesheet" defer>
     <link rel="shortcut icon" href="{{site.baseUrl }}/public/favicon.ico">
+
+
+     <!-- Icons -->
+  <link rel="apple-touch-icon-precomposed" sizes="144x144"
+    href="{{ site.baseurl }}/public/apple-touch-icon-precomposed.png" defer>
+  <!-- <link rel="shortcut icon" href="{{ site.baseurl }}/public/favicon.ico"> -->
+
+  <!-- ////////// Favicon ////////// -->
+  <!-- For old IEs -->
+  <link rel="shortcut icon" href="{{ site.baseurl }}/public/favicon.ico/favicon.ico" async>
+  <!-- For new browsers - multisize ico  -->
+  <link rel="icon" type="image/x-icon" sizes="16x16 32x32" href="{{ site.baseurl }}/public/favicon.ico/favicon.ico"
+    async>
+  <!-- For iPad with high-resolution Retina display running iOS ≥ 7: -->
+  <link rel="apple-touch-icon-precomposed" sizes="152x152" href="{{ site.baseurl }}/public/favicon.ico/favicon-152.png"
+    async>
+  <!-- For iPad with high-resolution Retina display running iOS ≤ 6: -->
+  <link rel="apple-touch-icon-precomposed" sizes="144x144" href="{{ site.baseurl }}/public/favicon.ico/favicon-144.png"
+    async>
+  <!-- For iPhone with high-resolution Retina display running iOS ≥ 7: -->
+  <link rel="apple-touch-icon-precomposed" sizes="120x120" href="{{ site.baseurl }}/public/favicon.ico/favicon-120.png"
+    async>
+  <!-- For iPhone with high-resolution Retina display running iOS ≤ 6: -->
+  <link rel="apple-touch-icon-precomposed" sizes="114x114" href="{{ site.baseurl }}/public/favicon.ico/favicon-114.png"
+    async>
+  <!-- For iPhone 6+ -->
+  <link rel="apple-touch-icon-precomposed" sizes="180x180" href="{{ site.baseurl }}/public/favicon.ico/favicon-180.png"
+    async>
+  <!-- For first- and second-generation iPad: -->
+  <link rel="apple-touch-icon-precomposed" sizes="72x72" href="{{ site.baseurl }}/public/favicon.ico/favicon-72.png"
+    async>
+  <!-- For non-Retina iPhone, iPod Touch, and Android 2.1+ devices: -->
+  <link rel="apple-touch-icon-precomposed" href="{{ site.baseurl }}/public/favicon.ico/favicon-57.png" async>
+  <!-- For Old Chrome -->
+  <link rel="icon" href="{{ site.baseurl }}/public/favicon.ico/favicon-32.png" sizes="32x32" async>
+  <!-- For IE10 Metro -->
+  <meta name="msapplication-TileColor" content="#FFFFFF">
+  <meta name="msapplication-TileImage" content="favicon-144.png" async>
+  <meta name="theme-color" content="#ffffff">
+  <!-- Chrome for Android -->
+  <link rel="manifest" href="{{ site.baseurl }}/manifest.json">
+  <link rel="icon" sizes="192x192" href="{{ site.baseurl }}/public/favicon.ico/favicon-192.png" async>
+  <!-- ////////// Favicons end ////////// -->
+
+
+  <!--  -->
+  <!-- Open graph -->
+  <meta property="og:title" content="{{ title }}">
+  <meta property="og:description" content="{{ description or site.description or title  }}">
+  <meta property="og:type" content="article">
+  <meta property="og:image" content="{{ site.url }}{{ image or site.owner.image }}" />
+  <meta property="og:image:width" content="1200" />
+  <meta property="og:image:height" content="675" />
+  <!-- Twitter -->
+  <meta name="twitter:title" content="{{ title }}">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:site" content="@{{site.owner.twitter}}">
+  <meta name="twitter:description" content="{{ description or site.description or title  }}">
+  <meta name="twitter:image" content="{{ site.url }}{{  image or site.owner.image }}">
+  <meta name="twitter:creator" content="@{{site.owner.twitter}}">
+
+  <!--  -->
+
+  {% if site.isProd %}
+  <script async src="https://www.googletagmanager.com/gtag/js?id={{ site.tracking.gtag }}">
+  </script>
+
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag() { dataLayer.push(arguments); }
+    gtag('js', new Date());
+
+    gtag('config', '{{ site.tracking.gtag }}');
+  </script>
+
+  {% endif %}
+
 </head>

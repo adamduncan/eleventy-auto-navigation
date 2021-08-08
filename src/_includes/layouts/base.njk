@@ -13,7 +13,11 @@
         {% include 'components/nav.njk' %}
 
         <main class="main">
-
+          <div class="btn-toggle-page-wrapper">
+            <button class="btn-toggle-page" id="main-btn-toggle">
+              <i class="fas fa-bars"></i>
+            </button>
+          </div>
           {{ content | safe }}
 
           {# {{site|dump|safe}} #}
@@ -26,5 +30,22 @@
       ddtreemenu.createTree("treemenu3", true)
     </script>
     {% include 'components/syntax-highlight.njk' %}
+
+    <script  type="text/javascript">
+      const navBarBtnToggleEl = document.querySelector('#nav-bar-btn-toggle');
+      const mainBtnToggleEl = document.querySelector('#main-btn-toggle');
+      const navigationPrimaryEl = document.querySelector('.navigation-primary')
+      const mainPrimaryEl = document.querySelector('.main')
+      navBarBtnToggleEl.onclick = () => {
+        navigationPrimaryEl.style.display = 'none';
+        mainPrimaryEl.style.display = 'block';
+         mainPrimaryEl.style.width = '100%';
+      }
+
+      mainBtnToggleEl.onclick = () => {
+        navigationPrimaryEl.style.display = 'block';
+        mainPrimaryEl.style.display = 'none';
+      }
+    </script>
   </body>
 </html>
