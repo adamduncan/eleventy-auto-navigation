@@ -44,7 +44,7 @@ These are optional, and removing them will remove them from the layout of the pa
 - `title`
 - `description`
 - `version`
-- `owner.mage`
+- `owner.image`
 
 Similarly, if there are no social media or contacts links under the `owner` attribute, the footer will not be displayed.
 
