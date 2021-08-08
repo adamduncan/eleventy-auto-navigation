@@ -1,7 +1,7 @@
 const environment = process.env.ELEVENTY_ENV;
 console.log('environment', environment)
 const PROD_ENV = 'prod';
-const prodUrl = 'https://pietropassarelli.com';
+const prodUrl = 'https://pietropassarelli.com/11ty-auto-navigation-book-template';
 const devUrl = 'http://localhost:8080';
 const baseUrl = environment === PROD_ENV ? prodUrl : devUrl;
 const isProd = environment === PROD_ENV;

@@ -3,6 +3,8 @@
 <!-- _One liner + link to confluence page_
 _Screenshot of UI - optional_ -->
 
+
+
 ## Setup
 
 <!-- _stack - optional_
@@ -139,5 +141,6 @@ _stretch goal_
 - [ ] Modify `/_data/site.js`
 - [ ] Modify `/manifest.json`
 - [ ] Markdown files and folder in `/src` folder. Eg replace with your content.
+- [ ] Modify `/CNAME` file with name of your site
 - [ ] `src/_includes/components/search.njk` line `10` replace with name of your site. (Ideall when can get `_data` folder to work, this step should not be needed)
 - [ ] ...

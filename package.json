@@ -8,7 +8,7 @@
     "build": "ELEVENTY_ENV=prod npx @11ty/eleventy",
     "dry:run": "npx @11ty/eleventy --dryrun",
     "deploy": "ELEVENTY_ENV=prod cp .nojekyll _site/.nojekyll && cp CNAME _site/CNAME && cp manifest.json _site/manifest.json && gh-pages -d _site",
-    "build:deploy": "npm run build && npm run pre:deploy"
+    "build:deploy": "npm run build && npm run deploy"
   },
   "repository": {
     "type": "git",
