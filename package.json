@@ -21,7 +21,7 @@
   "bugs": {
     "url": "https://github.com/pietrop/11ty-auto-navigation-book-template/issues"
   },
-  "homepage": "https://github.com/pietrop/11ty-auto-navigation-book-template#readme",
+  "homepage": "https://github.com/pietrop/11ty-auto-navigation-book-template",
   "devDependencies": {
     "@11ty/eleventy": "^0.11.0",
     "@11ty/eleventy-navigation": "^0.1.6",

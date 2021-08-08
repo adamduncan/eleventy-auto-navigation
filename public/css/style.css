@@ -19,9 +19,15 @@ margin: 0px;
     overflow: hidden;
     text-overflow: ellipsis;
 }
+.navigation-link:first-letter {
+    text-transform: capitalize;
+}
+
+.wrapper-site-info > p:first-letter {
+    text-transform: capitalize;
+}
 
 .navigation-link {
-    text-transform: capitalize;
     font-weight: 500;
     color: rgba(25, 23, 17, 0.7);
      /* color: #181610; */
@@ -226,8 +232,9 @@ blockquote {
     font-family: 'Helvetica', 'Arial', sans-serif;
 }
 
-.about, .footer, .header, .nav, .intro {
-    font-family: 'Courier New', 'Helvetica', 'Arial', sans-serif;
+ .footer {
+    font-family: 'Helvetica', 'Arial', sans-serif;
+    font-size: small;
 }
 
 .about p, p.intro {
@@ -261,6 +268,9 @@ details {
     overflow: scroll;
 }
 
+details > summary:first-letter {
+    text-transform: capitalize;
+}
 
 /* search Form */
 
@@ -291,4 +301,21 @@ details {
     justify-content: space-between;
     align-content: space-between;
     height: 100%;
+}
+.wrapper-site-info>p{
+    text-align: center;
+}
+.wrapper-site-info{
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.site-owner-image{
+   /* https://stackoverflow.com/questions/37920332/force-image-tag-to-be-perfect-circle */
+    border-radius: 50%;
+    height: 100px;
+    width: 100px;
+    object-fit: cover;
+    object-position: center;
 }

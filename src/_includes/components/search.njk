@@ -7,7 +7,7 @@
     function duckSearch() {
         var searchField = document.getElementById("searchField");
         if (searchField && searchField.value) {
-            var query = escape("site:https://pietropassarelli.com/11ty-auto-navigation-book-template"+" "+ searchField.value);
+            var query = escape("site:{{site.baseUrl}}"+" "+ searchField.value);
             window.open ( "https://duckduckgo.com/?q=" + query, "_blank");
         }
     }

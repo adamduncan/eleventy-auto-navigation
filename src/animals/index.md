@@ -1,6 +1,6 @@
 ---
 title: Animals
-order: 2
+order: 4
 emoji: 🦒
 ---
 

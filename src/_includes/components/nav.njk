@@ -2,9 +2,6 @@
 
 {# {{ navPages | log }} #}
 
-
-
-
 {# If the markdown page does not have yaml header, the page title is the folder path + file name. removing path from name #}
 {% macro sanitizePageName(title)%}
   {%- if title.includes('/') -%}
@@ -15,25 +12,49 @@
 {%- endmacro %}
 
 <nav class="navigation-primary navigation-primary--light stretch-horizontal-M">
-<p><b>{{site.title}}</b></p>
-<p><i>{{site.tagline}}</i></p>
-   {% include 'components/search.njk' %}
+ {%-if site.version or site.owner and site.owner.image -%}
+  <div class="wrapper-site-info">
+    {%-endif-%}
+    <p>
+      <b>{{site.title}}</b>
+    </p>
+    <p>
+      <i>{{site.description}}</i>
+    </p>
 
-<a href="javascript:ddtreemenu.flatten('treemenu3', 'expand')" class="navigation-link">Expand All</a> | <a href="javascript:ddtreemenu.flatten('treemenu3', 'contact')" class="navigation-link">Collapse All</a>
+    {%-if site.version-%}
+      <p>
+        <a href="{{site.repo}}"  target="_blank" rel="noopener noreferrer">
+          <i class="fas fa-layer-group"></i></a> <code>{{site.version}}</code>
+      </p>
+      {%-endif-%}
 
-{# {{ navPages | dump |safe }} #}
+      {%-if site.owner and site.owner.image -%}
 
-  {% macro renderNavListItem(entry, sub) -%}
-    {# Some interesting workarounds/conditions here to apply .is-active classes down the tree #}
-    {% set isHomepage = entry.url == '/' %}
-    {% set isActive = page.url | endsWith(entry.url) %}
+        <img class="site-owner-image" src="{{ site.owner.image}}" alt="test" width="100%" height="auto">
 
-    <li
+        {%-endif-%}
+
+        {%-if site.version or site.owner and site.owner.image -%}
+      </div>
+    {%-endif-%}
+      {% include 'components/search.njk' %}
+
+      <a href="javascript:ddtreemenu.flatten('treemenu3', 'expand')" class="navigation-link">Expand All</a> | <a href="javascript:ddtreemenu.flatten('treemenu3', 'contact')" class="navigation-link">Collapse All</a>
+
+      {# {{ navPages | dump |safe }} #}
+
+      {% macro renderNavListItem(entry, sub) -%}
+        {# Some interesting workarounds/conditions here to apply .is-active classes down the tree #}
+        {% set isHomepage = entry.url == '/' %}
+        {% set isActive = page.url | endsWith(entry.url) %}
+
+        <li
      class="navigation-link {% if sub %}navigation-primary__sub-item{% else %}navigation-primary__item{% endif %}"
     >
-    {# <details><summary>test </summary>yo  </details> #}
-    {# {{entry |dump |safe}} #}
-      <a
+          {# <details><summary>test </summary>yo  </details> #}
+          {# {{entry |dump |safe}} #}
+          <a
         {% if entry.url == page.url %}aria-current="page"{% endif %}
         href="{{site.baseUrl}}{{ entry.url | url }}"
         class="navigation-link
@@ -42,31 +63,30 @@
           {% if isHomepage and entry.url == page.url %}is-active{% endif %}
         "
       >
-        <span title="{{sanitizePageName(entry.title)}}"
+            <span title="{{sanitizePageName(entry.title)}}"
           class="navigation-link {% if sub %}navigation-primary__sub-link-text{% else %}navigation-primary__link-text{% endif %}"
         >
-          <span class="emoji">{{entry.emoji}}</span> {{sanitizePageName(entry.title)}}
-        </span>
-      </a>
-      {%- if entry.children.length -%}
-        <ul class="navigation-link navigation-primary__sub-items">
-          {%- for child in entry.children %}{{
+              <span class="emoji">{{entry.emoji}}</span>
+              {{sanitizePageName(entry.title)}}
+            </span>
+          </a>
+          {%- if entry.children.length -%}
+            <ul class="navigation-link navigation-primary__sub-items">
+              {%- for child in entry.children %}{{
           renderNavListItem(child, true)
         }}
-          {% endfor -%}
-      </ul>
-    {%- endif -%}
+              {% endfor -%}
+          </ul>
+        {%- endif -%}
 
-   
-  </li>
-{%- endmacro %}
-</ul>
+      </li>
+    {%- endmacro %}
+  </ul>
 
-<ul class="navigation-link navigation-primary__items treeview"  id="treemenu3">
-  {%- for entry in navPages %}{{
+  <ul class="navigation-link navigation-primary__items treeview"  id="treemenu3">
+    {%- for entry in navPages %}{{
       renderNavListItem(entry)
     }}
-  {%- endfor -%}
-</ul>
+    {%- endfor -%}
+  </ul>
 </nav>
-

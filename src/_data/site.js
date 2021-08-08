@@ -1,64 +1,39 @@
 const environment = process.env.ELEVENTY_ENV;
-console.log('environment', environment)
 const PROD_ENV = 'prod';
 const prodUrl = 'https://pietropassarelli.com/11ty-auto-navigation-book-template';
 const devUrl = 'http://localhost:8080';
 const baseUrl = environment === PROD_ENV ? prodUrl : devUrl;
 const isProd = environment === PROD_ENV;
 const packageJson = require('../../package.json');
-const {name,version,description} = packageJson;
-
-// const folder = {
-//   assets: 'assets',
-// };
-
-// const dir = {
-//   img: `/${folder.assets}/img/`,
-// }
-
+const {name,version,description, homepage} = packageJson;
 
 module.exports = {
-  // site: {
     environment,
     isProd,
-    // folder,
-    // base: {
-    //   site: baseUrl,
-    //   img: `${baseUrl}${dir.img}`,
-    // },
     tracking: {
-      // gtag: 'G-R6JQ09CW0P',
       gtag: ''
     },
-    // "title": "11ty auto navigation book template",
-    title: name.replace(/-/g, ' '),
-    version,
-    "tagline": description,
-    "name": "Test",
-    // "description": "11ty auto navigation book template",
-    description,
-    "url": "https://pietropassarelli.com/11ty-auto-navigation-book-template",
+    title: name.replace(/-/g, ' '),// optional 
+    version, // optional 
+    description,// optional 
     baseUrl,
-    "repo": "https://github.com/pietrop/11ty-auto-navigation-book-template",
-    "comments": false,
-    "author": {
-      "name": "Pietro",
-      "email": "pietro.passarelli@gmail.com"
+    repo: homepage,
+    author: {
+      name: "Pietro",
+      email: "pietro.passarelli@gmail.com"
     },
-    "owner": {
-      "name": "Pietro",
-      "last_name": "Passarelli",
-      // "email": "pietro.passarelli@gmail.com",
-      // "twitter": "pietropassarell",
-      // "facebook": "pietro.passarelli",
-      // "github": "pietrop",
-      // "linkedin": "pietropassarelli",
-      // "instagram": "pietro.ps",
-      "about": "ubiq/pietro.jpeg",
-      "image": "/img/about/fahrul-razi-BR6lrzCPYPk-unsplash.jpeg"
+    owner: {
+      name: "Pietro",
+      last_name: "Passarelli",
+      email: "pietro.passarelli@gmail.com", // optional 
+      twitter: "pietropassarell", // optional 
+      facebook: "pietro.passarelli", // optional 
+      github: "pietrop/11ty-auto-navigation-book-template", // optional 
+      linkedin: "pietropassarelli", // optional 
+      instagram: "pietro.ps", // optional 
+      // "image:"https://images.unsplash.com/photo-1463453091185-61582044d556?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1950&q=80",
+    //  "image: "https://images.unsplash.com/photo-1438761681033-6461ffad8d80?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=2700&q=80",
+      image: "https://images.unsplash.com/photo-1511367461989-f85a21fda167?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=3289&q=80" // optional 
     },
-    "og_locale": "en_US",
-    "placeholder_image": "/img/placeholder/clouds.jpeg",
-// 
-  // }
+    og_locale: "en_US"
 };

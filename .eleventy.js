@@ -74,6 +74,7 @@ module.exports = function (eleventyConfig) {
     dir: {
       input: "src",
       output: "./_site",
+      pathPrefix: '/11ty-auto-navigation-book-template/'
       // data: "_data",
     },
   };
