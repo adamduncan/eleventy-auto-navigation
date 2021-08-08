@@ -1,5 +1,5 @@
 {
-  "name": "eleventy-auto-navigation",
+  "name": "11ty-auto-navigation-book-template",
   "version": "1.0.0",
   "description": "Directory structure-based navigation for eleventy-plugin-navigation.",
   "main": ".eleventy.js",
@@ -12,14 +12,14 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/pietrop/eleventy-auto-navigation.git"
+    "url": "git+https://github.com/pietrop/11ty-auto-navigation-book-template.git"
   },
   "author": "Pietro Passarelli",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/pietrop/eleventy-auto-navigation/issues"
+    "url": "https://github.com/pietrop/11ty-auto-navigation-book-template/issues"
   },
-  "homepage": "https://github.com/pietrop/eleventy-auto-navigation#readme",
+  "homepage": "https://github.com/pietrop/11ty-auto-navigation-book-template#readme",
   "devDependencies": {
     "@11ty/eleventy": "^0.11.0",
     "@11ty/eleventy-navigation": "^0.1.6",
