@@ -1,17 +1,18 @@
+<style>
 .treeview ul{ /*CSS for Simple Tree Menu*/
     margin: 0;
     padding: 0;
     }
     
     .treeview li{ /*Style for LI elements in general (excludes an LI that contains sub lists)*/
-    background: transparent url('/public/simpletreemenu/list.gif') no-repeat left center;
+    background: transparent url('{{site.baseUrl}}/public/simpletreemenu/list.gif') no-repeat left center;
     list-style-type: none;
     padding-left: 22px;
     margin-bottom: 3px;
     }
     
     .treeview li.submenu{ /* Style for LI that contains sub lists (other ULs). */
-    background: transparent url('/public/simpletreemenu/closed.gif') no-repeat left 1px;
+    background: transparent url('{{site.baseUrl}}/public/simpletreemenu/closed.gif') no-repeat left 1px;
     cursor: hand !important;
     cursor: pointer !important;
     }
@@ -24,3 +25,5 @@
     .treeview .submenu ul li{ /*Style for LIs of ULs that are children of LIs (submenu) */
     cursor: default;
     }
+
+  </style>

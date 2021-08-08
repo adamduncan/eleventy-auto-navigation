@@ -1,5 +1,5 @@
 <form class="search-form" onsubmit="duckSearch()" action="javascript:void(0)">
-    <input id="searchField" type="text" value="" placeholder="Search..."> <img class="duck-icon" src="/img/rubber-duck.png" alt="decoration rubber duck" width="20" height="20">
+    <input id="searchField" type="text" value="" placeholder="Search..."> <img class="duck-icon" src="{{site.baseUrl}}/img/rubber-duck.png" alt="decoration rubber duck" width="20" height="20">
 </form>
 
 
@@ -7,7 +7,7 @@
     function duckSearch() {
         var searchField = document.getElementById("searchField");
         if (searchField && searchField.value) {
-            var query = escape("site:pietropassarelli.com " + searchField.value);
+            var query = escape("site:https://pietropassarelli.com/11ty-auto-navigation-book-template"+" "+ searchField.value);
             window.open ( "https://duckduckgo.com/?q=" + query, "_blank");
         }
     }

@@ -1,8 +1,7 @@
 ---
 title: Animals
 order: 2
-eleventyNavigation:
-    emoji: 🦒
+emoji: 🦒
 ---
 
 <!-- # Home -->

@@ -50,6 +50,14 @@ footer.footer {
     height: 4vh;
 }
 
+.footer {
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    text-align: center;
+}
+
 .post-wrapper {
     display: flex;
     justify-content: center;
@@ -269,4 +277,8 @@ details {
 .duck-icon{
     margin-top: 1em;
     margin-left: 1em;
+}
+
+.edit-on-github-link{
+    text-align: right;
 }

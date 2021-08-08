@@ -122,7 +122,10 @@ This publishes the site to github pages for this github repository.
 - [x] add other 11ty things, like syntax highlight etc.. and example pages 
 - [x] Test local images, to see if needs extra configuration 
 - [ ] figure out why `_data` `site.js` is not working
-- [x] figure out why current page has stop showing up 
+- [x] figure out why current page has stop showing up
+- [x] edit on github link 
+- [ ] support for font awesome icons
+- [x] optional footer
 
 _stretch goal_
 - [ ] add footer 

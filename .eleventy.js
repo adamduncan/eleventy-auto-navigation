@@ -2,6 +2,7 @@ const syntaxHighlight = require("@11ty/eleventy-plugin-syntaxhighlight");
 const Image = require("@11ty/eleventy-img");
 const embedYouTube = require("eleventy-plugin-youtube-embed");
 const embedTwitter = require("eleventy-plugin-embed-twitter");
+const embedVimeo = require("eleventy-plugin-vimeo-embed");
 
 
 const IMAGES = ["avif", "jpeg", "jpg", "png", "giff", "gif", "webp"];
@@ -38,6 +39,7 @@ module.exports = function (eleventyConfig) {
   eleventyConfig.addPlugin(syntaxHighlight);
   eleventyConfig.addPlugin(embedTwitter);
   eleventyConfig.addPlugin(embedYouTube);
+  eleventyConfig.addPlugin(embedVimeo);
 
   eleventyConfig.addNunjucksAsyncShortcode("image", imageShortcode);
   eleventyConfig.addLiquidShortcode("image", imageShortcode);
@@ -66,12 +68,13 @@ module.exports = function (eleventyConfig) {
     require("./src/_11ty/filters/endsWith")
   );
 
+
   return {
     passthroughFileCopy: true,
     dir: {
       input: "src",
       output: "./_site",
-      data: "_data",
+      // data: "_data",
     },
   };
 };

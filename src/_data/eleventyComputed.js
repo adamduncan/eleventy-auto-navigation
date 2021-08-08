@@ -12,6 +12,7 @@ module.exports = {
       return data.key || path;
     },
     title: (data) => data.title,
+    emoji: (data)=>data.emoji,
     parent: (data) => {
       // Let's deduce parent value, based on URL path.
       // This is a bit sketchy, but 11ty's navigation plugin

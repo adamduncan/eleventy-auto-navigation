@@ -1,7 +1,6 @@
 ---
 image: 'https://images.unsplash.com/photo-1548638168-bdb1d0f1e700?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=3289&q=80'
-eleventyNavigation:
-    emoji: 🐋
+emoji: 🐋
 # title: 'CHAPTER 2. The Carpet-Bag.'
 ---
 

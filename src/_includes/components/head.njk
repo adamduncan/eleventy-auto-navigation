@@ -3,18 +3,30 @@
         {{site.title}} - {{title}}</title>
 
     <!-- CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css"
+    integrity="sha512-nhsc1ymyruxifcj/kfrwoc561yphpc5jtzgvbuzx5vozkpwvq+4nxhpdfgmx8xqexrcpagltj9sibwinxa8x5w=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" defer/>
+
     <link rel="stylesheet" href="{{ site.baseurl }}/public/css/style.css" defer>
-    <link rel="stylesheet" href="{{ site.baseurl }}/public/css/dark-mode.css" defer>
-    <script type="text/javascript" src="{{ site.baseurl }}/public/simpletreemenu/simpletreemenu.js">
+    <link rel="stylesheet" href="{{site.baseurl }}/public/css/dark-mode.css" defer>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+    integrity="sha512-ibbxm8fw90+nulcsklbmrpcla0ot92xo1bisz+ywdwzcvqswgccv3gforbv0z+8dljgyahihr35vzc2om/gi1w=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" defer/>
+
+    {# <script type="text/javascript" src="{{site.baseUrl }}/public/simpletreemenu/simpletreemenu.js">
         /***********************************************
       * Simple Tree Menu- (c) Dynamic Drive DHTML code library (www.dynamicdrive.com)
       * Please keep this notice intact
       * Visit Dynamic Drive at http://www.dynamicdrive.com/ for full source code
       ***********************************************/
-    </script>
-    <link rel="stylesheet" type="text/css" href="{{ site.baseurl }}/public/simpletreemenu/simpletree.css"/>
+    </script> #}
+
+    {% include 'simpletreemenu/simpletreemenu.njk' %}
+    {% include 'simpletreemenu/simpletree.njk' %}
+    {# <link rel="stylesheet" type="text/css" href="{{site.baseUrl }}/public/simpletreemenu/simpletree.css"/> #}
 
     <!-- Syntax highlight  -->
     <link id="prism-css" href="https://unpkg.com/prismjs@1.20.0/themes/prism.css" rel="stylesheet" defer>
-    <link rel="shortcut icon" href="{{ site.baseurl }}/public/favicon.ico">
+    <link rel="shortcut icon" href="{{site.baseurl }}/public/favicon.ico">
 </head>

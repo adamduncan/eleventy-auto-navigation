@@ -5,9 +5,9 @@
 
   <body>
     <div class="container default-pages">
-      <header class="header">
+      {# <header class="header">
         {{ site.title }}
-        {{page.title}}</header>
+        {{page.title}}</header> #}
       <div class="wrapper">
 
         {% include 'components/nav.njk' %}
@@ -20,7 +20,7 @@
           {# {{test|dump|safe}} #}
         </main>
       </div>
-      {# {% include 'components/footer.njk' %} #}
+      {% include 'components/footer.njk' %}
     </div>
     <script type="text/javascript">
       ddtreemenu.createTree("treemenu3", true)

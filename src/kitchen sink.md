@@ -1,18 +1,18 @@
 ---
 title: 'Kitchen sink'
 image: 'https://images.unsplash.com/photo-1556911220-bff31c812dba?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2035&q=80'
-eleventyNavigation:
-    emoji: 🍳
+emoji: 🍳
 ---
 
 ---
 ## Text
 
-Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi finibus mi vulputate, venenatis lorem sed, sodales mi. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec in eleifend nulla. Pellentesque egestas hendrerit libero, id sollicitudin eros rhoncus at. Integer mattis, mauris nec pulvinar vehicula, tortor mi condimentum leo, a faucibus nisl magna luctus odio. Etiam varius enim et purus pulvinar cursus. Nullam pharetra maximus tellus, eget dictum arcu sagittis quis. Nam at hendrerit eros. Sed vel ultrices lorem. Cras iaculis felis sapien, sed sagittis diam dignissim vehicula.
+Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi finibus mi vulputate, venenatis lorem sed, sodales mi. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec in eleifend nulla. 
 
-Suspendisse eget ligula in sem dignissim laoreet. Quisque consectetur tellus pellentesque velit molestie, non feugiat risus tempor. Vestibulum ac sollicitudin dui, in ullamcorper odio. Proin tincidunt metus at metus gravida dictum. Quisque placerat faucibus erat sit amet pulvinar. Ut ut lorem ac arcu tempus auctor tincidunt in ipsum. Morbi maximus, nisi at egestas cursus, tortor eros pulvinar ipsum, id commodo lorem diam quis quam. Mauris quis facilisis mauris. Suspendisse potenti. Phasellus pharetra, mauris et sollicitudin molestie, eros turpis viverra felis, nec ultricies eros enim eu massa. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse aliquet ligula quis dolor imperdiet tempus.
+Pellentesque egestas hendrerit libero, id sollicitudin eros rhoncus at. Integer mattis, mauris nec pulvinar vehicula, tortor mi condimentum leo, a faucibus nisl magna luctus odio. Etiam varius enim et purus pulvinar cursus. 
 
-In a quam at nisi bibendum blandit vel at mi. Quisque semper massa in est vulputate dictum. Nam in ultrices augue, ut consectetur tortor. Quisque id maximus augue. Cras dictum eros ut commodo feugiat. Vivamus urna lectus, consequat vel fermentum sed, pellentesque ac tortor. Vestibulum lacinia varius mauris eu hendrerit. Duis facilisis nisi quis risus tristique pellentesque. Aliquam a ex tellus. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Sed ac tempor tortor, ut lobortis erat. Vivamus gravida sem massa, ut lobortis neque consectetur sit amet. Morbi sed eros cursus, euismod tellus et, sollicitudin mi. Nam eu velit efficitur, consectetur mauris rutrum, ultrices odio.
+Nullam pharetra maximus tellus, eget dictum arcu sagittis quis. Nam at hendrerit eros. Sed vel ultrices lorem. Cras iaculis felis sapien, sed sagittis diam dignissim vehicula.
+
 
 ---
 
@@ -175,14 +175,32 @@ A markdown image wrapped in a markdown link
 
 To embed youtube, you just need to place the youtube url in it's own line, thanks to pugin.
 
-https://youtu.be/jNQXAC9IVRw
+https://youtu.be/id-zyjjOplY
 
 
 <details>
 <summary>Code example</summary>
 
 ```
-https://youtu.be/jNQXAC9IVRw
+https://youtu.be/id-zyjjOplY
+```
+
+</details>
+
+---
+
+## Vimeo
+
+To embed vimeo, you just need to place the vimeo url in it's own line, thanks to pugin.
+
+https://vimeo.com/128057278
+
+
+<details>
+<summary>Code example</summary>
+
+```
+https://vimeo.com/128057278
 ```
 
 </details>
@@ -254,4 +272,4 @@ _Sed ac tempor tortor, ut lobortis erat._
 If you switch your system to darkmode the site, will use the darkmode css.
 
 
-![Auto dark mode exmaple](/img/kitchen-sink/kitchen-sink-auto-dark-mode-example.png)
+![Auto dark mode exmaple]({{site.baseUrl}}/img/kitchen-sink/kitchen-sink-auto-dark-mode-example.png)

@@ -15,6 +15,8 @@
 {%- endmacro %}
 
 <nav class="navigation-primary navigation-primary--light stretch-horizontal-M">
+<p><b>{{site.title}}</b></p>
+<p><i>{{site.tagline}}</i></p>
    {% include 'components/search.njk' %}
 
 <a href="javascript:ddtreemenu.flatten('treemenu3', 'expand')" class="navigation-link">Expand All</a> | <a href="javascript:ddtreemenu.flatten('treemenu3', 'contact')" class="navigation-link">Collapse All</a>
@@ -33,7 +35,7 @@
     {# {{entry |dump |safe}} #}
       <a
         {% if entry.url == page.url %}aria-current="page"{% endif %}
-        href="{{ entry.url | url }}"
+        href="{{site.baseUrl}}{{ entry.url | url }}"
         class="navigation-link
           {% if sub %}navigation-primary__sub-link{% else %}navigation-primary__link{% endif %}
           {% if isActive and not isHomepage %}is-active{% endif %}

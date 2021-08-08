@@ -11,16 +11,16 @@ layout: layouts/base.njk
 
 <div class="post-wrapper">
     <div class="post">
-       {%-if eleventyNavigation.emoji and not image -%}
+       {%-if emoji and not image -%}
   <br/>
           <br/>
             <br/>
        <br/>
           <br/>
        {%-endif-%}
-        {%-if eleventyNavigation.emoji -%}
+        {%-if emoji -%}
             <div class="emoji-wrapper">
-                {{eleventyNavigation.emoji}}
+                {{emoji}}
             </div>
         {%- endif -%}
 
@@ -30,5 +30,7 @@ layout: layouts/base.njk
 
         {{ content  | safe}}
 
+
+        {% include 'components/edit-on-github.njk' %}
     </div>
 </div>

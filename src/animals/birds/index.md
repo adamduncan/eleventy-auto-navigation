@@ -1,7 +1,6 @@
 ---
 title: Birds
-eleventyNavigation:
-    emoji: 🐦
+emoji: 🐦
 ---
 
 <!-- # Birds -->

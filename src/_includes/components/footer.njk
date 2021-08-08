@@ -1,5 +1,6 @@
+ {% if site.owner.email or  site.owner.twitter or site.owner.github or  site.owner.linkedin or site.owner.instagram  %}
 <footer class="footer">
-{{site|dump|safe}}
+{# {{site|dump|safe}} #}
     <nav>
         <ul class="contacts-list">
             <li>
@@ -35,3 +36,5 @@
         </ul>
     </nav>
 </footer>
+
+{%   endif %}
