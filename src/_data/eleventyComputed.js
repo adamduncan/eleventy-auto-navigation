@@ -2,8 +2,21 @@
 // `parent` in every page's frontmatter. There will be a nicer
 // way of doing this, but for a POC, maybe it's okay.
 
+function removeStartSlashFromUrl(url){
+  if(url[0]==='/'){
+    const urlArray = url.split('');
+    urlArray.shift();
+    return urlArray.join('')
+  }else{
+    return url;
+  }
+}
+
 module.exports = {
   eleventyNavigation: {
+    url: (data)=>{
+      return removeStartSlashFromUrl(data.page.url)
+    },
     key: (data) => {
       const urlParts = data.page.url.split("/");
       // Taking all but first and last leaves us with the page path

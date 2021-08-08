@@ -71,7 +71,7 @@ module.exports = function (eleventyConfig) {
 
   return {
     passthroughFileCopy: true,
-    pathPrefix: '/11ty-auto-navigation-book-template/',
+    pathPrefix: '/11ty-auto-navigation-book-template',
     dir: {
       input: "src",
       output: "./_site"

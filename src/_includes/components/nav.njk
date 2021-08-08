@@ -56,10 +56,10 @@
      class="navigation-link {% if sub %}navigation-primary__sub-item{% else %}navigation-primary__item{% endif %}"
     >
           {# <details><summary>test </summary>yo  </details> #}
-          {# {{entry |dump |safe}} #}
+          {# {{entry.url |dump |safe}} #}
           <a
         {% if entry.url == page.url %}aria-current="page"{% endif %}
-        href="{{site.baseUrl}}{{ entry.url | url }}"
+        href='{%if isHomepage %} {{site.baseUrl | url}}{% endif%}{% if not isHomepage %} {{site.baseUrl}}/{{ entry.url | url }} {%endif %}'
         class="navigation-link
           {% if sub %}navigation-primary__sub-link{% else %}navigation-primary__link{% endif %}
           {% if isActive and not isHomepage %}is-active{% endif %}
