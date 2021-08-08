@@ -108,6 +108,9 @@ npm run build:deploy
 
 or just `npm run deploy` if for some reason you don't need to build the site.
 
+
+This publishes the site to github pages for this github repository.
+
 ---
 
 
