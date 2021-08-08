@@ -1,5 +1,6 @@
 # eleventy-auto-navigation
 
+fork 
 <!-- https://github.com/adamduncan/eleventy-auto-navigation -->
 
 Directory structure-based navigation concept for eleventy-plugin-navigation. Based on a moonshoot :rocket: in [a discussion](https://github.com/11ty/eleventy/issues/1171#issuecomment-637038522) about automatic hierarchical navigation.
