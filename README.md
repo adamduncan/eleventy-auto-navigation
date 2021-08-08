@@ -135,7 +135,7 @@ _stretch goal_
 - [x] images embed for social media share options
 - [x] Other head social media tags
 - [ ] optional Google analytics setup 
-- [ ] figure out what to do about mobile
+- [~] figure out what to do about mobile
 - [ ] ~see if can move content page inside `src/content`~
 - [x] site search (~nice to have)
 - [ ] 404 page 
@@ -145,10 +145,9 @@ _stretch goal_
 ---
 
 ## To use as a template
-- [ ] Modify `/_data/site.js`
-- [ ] Modify `/manifest.json`
+- [ ] Modify `/src/_data/site.js`
+- [ ] Modify `/manifest.json` (TODO: minfest.json should pull a lot of the info from site.js)
 - [ ] Markdown files and folder in `/src` folder. Eg replace with your content.
 - [ ] Modify `/CNAME` file with name of your site
-- [ ] `src/_includes/components/search.njk` line `10` replace with name of your site. (Ideall when can get `_data` folder to work, this step should not be needed)
 - [ ] Change the favicon if you wish. `public/favicon.ico`
 - [ ] ...
