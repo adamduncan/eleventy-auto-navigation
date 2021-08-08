@@ -6,31 +6,30 @@ layout: layouts/base.njk
     <img src="{{ image }}" class="img-hero-wrapper" alt="{{ description }}"/>
     {%- else-%}
     <br/>
-     
+
 {%- endif -%}
 
 <div class="post-wrapper">
     <div class="post">
-       {%-if emoji and not image -%}
-  <br/>
-          <br/>
+        {%-if emoji and not image -%}
             <br/>
-       <br/>
-          <br/>
-       {%-endif-%}
-        {%-if emoji -%}
-            <div class="emoji-wrapper">
-                {{emoji}}
+            <br/>
+            <br/>
+            <br/>
+            <br/>
+            {%-endif-%}
+            {%-if emoji -%}
+                <div class="emoji-wrapper">
+                    {{emoji}}
+                </div>
+            {%- endif -%}
+
+            {%-if title-%}
+                <h1 class="post-title">{{title}}</h1>
+            {%- endif -%}
+            <div class="post-content-wrapper">
+                <div class="post-content">
+                    {{ content  | safe}}
+                </div>
+                {% include 'components/edit-on-github.njk' %}
             </div>
-        {%- endif -%}
-
-        {%-if title-%}
-            <h1 class="post-title">{{title}}</h1>
-        {%- endif -%}
-
-        {{ content  | safe}}
-
-
-        {% include 'components/edit-on-github.njk' %}
-    </div>
-</div>

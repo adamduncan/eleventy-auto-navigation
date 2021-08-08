@@ -61,6 +61,7 @@ footer.footer {
 .post-wrapper {
     display: flex;
     justify-content: center;
+    height: 100%;
 }
 
 .post {
@@ -281,4 +282,13 @@ details {
 
 .edit-on-github-link{
     text-align: right;
+}
+
+
+.post-content-wrapper{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-content: space-between;
+    height: 100%;
 }

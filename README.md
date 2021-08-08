@@ -149,4 +149,5 @@ _stretch goal_
 - [ ] Markdown files and folder in `/src` folder. Eg replace with your content.
 - [ ] Modify `/CNAME` file with name of your site
 - [ ] `src/_includes/components/search.njk` line `10` replace with name of your site. (Ideall when can get `_data` folder to work, this step should not be needed)
+- [ ] Change the favicon if you wish. `public/favicon.ico`
 - [ ] ...
