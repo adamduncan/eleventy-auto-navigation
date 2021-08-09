@@ -130,7 +130,7 @@ This publishes the site to github pages for this github repository.
 _stretch goal_
 - [x] add footer 
 - [ ] breakdown templates into parts, eg head.njk etc..
-- [ ] make outward links open new tab 
+- [x] make outward links open new tab 
 - [ ] show markdown alt image text as description of image?
 - [x] images embed for social media share options
 - [x] Other head social media tags
@@ -139,7 +139,6 @@ _stretch goal_
 - [ ] ~see if can move content page inside `src/content`~
 - [x] site search (~nice to have)
 - [ ] 404 page 
-- [ ] Open external links in a new page
 
 
 ---
