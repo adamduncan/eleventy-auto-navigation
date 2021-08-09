@@ -127,7 +127,7 @@ This publishes the site to github pages for this github repository.
 - [x] support for font awesome icons
 - [x] optional footer
 
-_stretch goal_
+_stretch goals_
 - [x] add footer 
 - [ ] breakdown templates into parts, eg head.njk etc..
 - [x] make outward links open new tab 
