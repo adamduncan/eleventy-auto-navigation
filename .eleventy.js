@@ -89,16 +89,13 @@ module.exports = function (eleventyConfig) {
   //   permalinkSymbol: "#"
   // })
   eleventyConfig.setLibrary("md", markdownLibrary);
-console.log('site.pathPrefix',site.pathPrefix)
 
   return {
     passthroughFileCopy: true,
-    // TODO: this needs to be taken from site.baseUrl;
-    pathPrefix: site.pathPrefix,//'/11ty-auto-navigation-book-template'
+    pathPrefix: site.pathPrefix,//eg '/11ty-auto-navigation-book-template'
     dir: {
       input: "src",
       output: "./_site"
-      // data: "_data",
     },
   };
 };
