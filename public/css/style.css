@@ -17,8 +17,8 @@ margin: 0px;
 
 .navigation-link {
     white-space: nowrap;
-    overflow: hidden;
-    text-overflow: ellipsis;
+    /* overflow: hidden; */
+    /* text-overflow: ellipsis; */
 }
 .navigation-link:first-letter {
     text-transform: capitalize;
@@ -286,4 +286,10 @@ details > summary:first-letter {
     width: 100px;
     object-fit: cover;
     object-position: center;
+}
+
+ul#treemenu3{
+    overflow: scroll;
+    height: 50vh;
+    padding-left: 1em;
 }
