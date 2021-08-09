@@ -131,10 +131,10 @@ _stretch goal_
 - [x] add footer 
 - [ ] breakdown templates into parts, eg head.njk etc..
 - [x] make outward links open new tab 
-- [ ] show markdown alt image text as description of image?
+- [ ] ~show markdown alt image text as description of image?~
 - [x] images embed for social media share options
 - [x] Other head social media tags
-- [ ] optional Google analytics setup 
+- [ ] optional Google analytics setup `~` (needs testing)
 - [x] figure out what to do about mobile `~`
 - [ ] ~see if can move content page inside `src/content`~
 - [x] site search (~nice to have)
