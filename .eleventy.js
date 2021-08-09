@@ -4,6 +4,8 @@ const embedYouTube = require("eleventy-plugin-youtube-embed");
 const embedTwitter = require("eleventy-plugin-embed-twitter");
 const embedVimeo = require("eleventy-plugin-vimeo-embed");
 
+const mdIterator = require('markdown-it-for-inline')
+const markdownIt = require('markdown-it');
 
 const IMAGES = ["avif", "jpeg", "jpg", "png", "giff", "gif", "webp"];
 async function imageShortcode(src, alt, sizes) {
@@ -29,7 +31,7 @@ async function imageShortcode(src, alt, sizes) {
  * Handling ege case where published attribute is not defined on post
  * When published attribute not define we assume we wanted to publish
  */
- const publishedPosts = (post) => {
+const publishedPosts = (post) => {
   // return post.data.published=== true || typeof  post.data.published === "undefined" ;
   return !(typeof post.data.published === 'boolean' && post.data.published === false);
 };
@@ -68,9 +70,29 @@ module.exports = function (eleventyConfig) {
     require("./src/_11ty/filters/endsWith")
   );
 
+  // from https://franknoirot.co/posts/external-links-markdown-plugin/
+  let markdownLibrary = markdownIt({
+    html: true,
+    breaks: true,
+    linkify: true
+  }).use(mdIterator, 'url_new_win', 'link_open', function (tokens, idx) {
+    const [attrName, href] = tokens[idx].attrs.find(attr => attr[0] === 'href')
+    if (href && (href.includes('https://') && !href.startsWith('/') && !href.startsWith('#'))) {
+      tokens[idx].attrPush(['target', '_blank'])
+      tokens[idx].attrPush(['rel', 'noopener noreferrer'])
+    }
+  })
+  // .use(markdownItAnchor, {
+  //   permalink: true,
+  //   permalinkClass: "direct-link",
+  //   permalinkSymbol: "#"
+  // })
+  eleventyConfig.setLibrary("md", markdownLibrary);
+
 
   return {
     passthroughFileCopy: true,
+    // TODO: this needs to be taken from site.baseUrl;
     pathPrefix: '/11ty-auto-navigation-book-template',
     dir: {
       input: "src",

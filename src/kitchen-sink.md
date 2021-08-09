@@ -74,18 +74,9 @@ In a quam at [my site](https://pietropassarelli.com) nisi bibendum blandit vel a
 </details>
 
 
-### open in new tab
+Note that if your link starts with `https://`, this is configure to open it in a new tab.
 
-In a quam at <a href="https://pietropassarelli.com"  target="_blank" rel="noopener noreferrer">my site</a> nisi bibendum blandit vel at mi. Quisque semper massa in est vulputate dictum.
- 
 
- <details>
-<summary>Code example</summary>
-
-```html
-In a quam at <a href="https://pietropassarelli.com"  target="_blank" rel="noopener noreferrer">my site</a> nisi bibendum blandit vel at mi. Quisque semper massa in est vulputate dictum.
-```
-</details>
 
 ### internal links
 
