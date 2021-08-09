@@ -80,17 +80,19 @@ Note that if your link starts with `https://`, this is configure to open it in a
 
 ### internal links
 
-[animals](/animals)
-[mammals](/animals/mammals)
-[Moby dick](/Moby%20Dick)
+internal links don't have preceding `/`
+
+[animals](animals)
+[mammals](animals/mammals)
+[Moby dick](Moby%20Dick)
 
 <details>
 <summary>Code example</summary>
 
 ```markdown
-[animals](/animals)
-[mammals](/animals/mammals)
-[Moby dick](/Moby%20Dick)
+[animals](animals)
+[mammals](animals/mammals)
+[Moby dick](Moby%20Dick)
 ```
 </details>
 
