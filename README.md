@@ -139,6 +139,7 @@ _stretch goals_
 - [ ] ~see if can move content page inside `src/content`~
 - [x] site search (~nice to have)
 - [ ] 404 page 
+- [ ] ...
 
 
 ---
