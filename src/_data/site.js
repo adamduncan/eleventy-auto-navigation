@@ -1,7 +1,8 @@
 const environment = process.env.ELEVENTY_ENV;
 const PROD_ENV = 'prod';
-const prodUrl = 'https://pietropassarelli.com/11ty-auto-navigation-book-template';
-const devUrl = 'http://localhost:8080/11ty-auto-navigation-book-template';
+const pathPrefix = `/11ty-auto-navigation-book-template`;
+const prodUrl = `https://pietropassarelli.com${pathPrefix}`;
+const devUrl = `http://localhost:8080${pathPrefix}`;
 const baseUrl = environment === PROD_ENV ? prodUrl : devUrl;
 const isProd = environment === PROD_ENV;
 const packageJson = require('../../package.json');
@@ -17,6 +18,7 @@ module.exports = {
     version, // optional 
     description,// optional 
     baseUrl,
+    pathPrefix,
     repo: homepage,
     author: {
       name: "Pietro",

@@ -145,6 +145,8 @@ _stretch goal_
 
 ## To use as a template
 - [ ] Modify `/src/_data/site.js`
+  - [ ] change `pathPrefix` on line 3
+  - [ ] Change other site info
 - [ ] Modify `/manifest.json` (TODO: minfest.json should pull a lot of the info from site.js)
 - [ ] Markdown files and folder in `/src` folder. Eg replace with your content.
 - [ ] Modify `/CNAME` file with name of your site

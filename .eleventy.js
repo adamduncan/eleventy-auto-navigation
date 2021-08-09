@@ -1,3 +1,4 @@
+const site = require('./src/_data/site.js');
 const syntaxHighlight = require("@11ty/eleventy-plugin-syntaxhighlight");
 const Image = require("@11ty/eleventy-img");
 const embedYouTube = require("eleventy-plugin-youtube-embed");
@@ -88,12 +89,12 @@ module.exports = function (eleventyConfig) {
   //   permalinkSymbol: "#"
   // })
   eleventyConfig.setLibrary("md", markdownLibrary);
-
+console.log('site.pathPrefix',site.pathPrefix)
 
   return {
     passthroughFileCopy: true,
     // TODO: this needs to be taken from site.baseUrl;
-    pathPrefix: '/11ty-auto-navigation-book-template',
+    pathPrefix: site.pathPrefix,//'/11ty-auto-navigation-book-template'
     dir: {
       input: "src",
       output: "./_site"
